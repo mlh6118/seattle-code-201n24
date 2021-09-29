@@ -1,0 +1,17 @@
+body {
+  background-color: bisque;
+}
+h1  {
+  font-size: 5rem;
+  color: purple;
+}
+
+ul {
+  margin-left: 2rem;
+  list-style-type: square;
+}
+
+li {
+  font-size: 3rem;
+  margin: 1rem;
+}
