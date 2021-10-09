@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+/* The above prevents us having to do this math: */
+/* width = content width + padding on the left + padding on the right + border on the right + border on the left */
+
+div, span {
+  /* border: 1px solid gray; */
+}
+h1 {
+  font-size: 2rem;
+}
+
+/* div.car {
+  background-color: lightblue;
+  border-color: green;
+}
+.car {
+  border: 2px solid red;
+} */
+/* div.car {
+  border-color: purple;
+} */
+
+/* div span {
+  background-color: orange;
+}
+div > span {
+  background-color: pink;
+}
+
+div ~ span { 
+  background-color: magenta;
+}
+div + span {
+  background-color: green;
+} */
+
+/* :nth-child() vs :nth-of-type() */
+/* :first-child - :first-of-type */
+
+/* main > aside > p:nth-of-type(2)  {
+  color: blue;
+  font-weight: bold;
+} */
+/* 
+aside aside {
+  border: 4px dotted brown;
+  background-color: tan;
+}
+
+/* aside aside p:nth-of-type(2) {
+  color: black;
+  font-weight: normal;
+} */
+/*
+aside::after {
+  content: 'Div:after';
+}
+aside::before {
+  content: 'Div:before';
+} */
+
+
+/* ------- More-layout.html -----  */
+
+section {
+  border: 15px solid red;
+  /* border-width: 15px 1px 40px 5px; */
+  
+  /* border-color: red; */
+  /* border-style: dashed; */
+  /* border: dashed; */
+
+  width: 80%;
+  /*         top, right, bottom, left (it goes clockwise) */
+  /* margin: 5rem auto 1rem auto; */
+  /* margin: auto;
+  margin-top: 5rem; */
+  /* display: block; */
+  /* padding: 1rem 2rem 3rem 4rem; */
+  /* overflow: auto; */
+}
+
+/* section > div {
+  border: dashed;
+} */
+
+section div {
+  border: 15px solid blue;
+  /* display: inline; */
+  /* display: inline-block; */
+  /* float: right; */
+  /* width: min-content; */
+  position: relative;
+}
+
+aside {
+  position: static;
+  /* left: 5rem; */
+}
+
+section div#three{
+  border-color: yellow;
+  /* left: 5rem;
+  top: 20rem; */
+  position: fixed;
+  bottom: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
