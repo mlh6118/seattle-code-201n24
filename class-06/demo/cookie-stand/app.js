@@ -4,17 +4,37 @@
 const seattleStore = document.getElementById('seattleList');
 let hours = ['6 a.m.', '7 a.m.', '8 a.m.'];
 
-//  min 6
-// max 15
-// 10 possible values that are between 6 and 15
-// 15 - 6 = 9 + 10
-// math.random() will give us a number between 1 & 10
-// ex.: 2
-// 2 + 6 = 8
-// 1, 2, 3 ,4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-// let's say we have a random number of 2.34
-// Math.floor() = 2
-// Math.ceil() = 3
+/*
+  What does this do:
+    Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+
+  Let's say we have a the following min and max values
+    min 6
+    max 15
+  So there are 10 possible values that are between 6 and 15
+  including 6 and 15 as possible options. 
+    1, 2, 3 ,4, 5, // 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 //
+
+  But if we subtract the min from the max it only equals 9
+    15 - 6 = 9 
+  We have to add 1 to that difference to get the number 
+    of possible options between our min and max. So we ...  
+      9 + 1 = 10
+
+  math.random() will give us a number between 1 & 10
+    ex. a random number: 2
+    But 2 is not between our min and max values of 6 and 15
+    Add that random number (2) to our min value (6) to get a  
+      number in the range we are looking for:
+        2 + 6 = 8
+
+  But math.random() will usually return values with decimals.       
+  let's say we have a random number of 2.34
+  We can use other methods to get an integer
+    Math.floor() = 2 (rounds any decimal down)
+    Math.ceil() = 3 (rounds any decimal up)
+    Math.round() = 2 (rounds up or down, depending which is closer)
+*/
 
 let seattle = {
   name: 'Seattle',
