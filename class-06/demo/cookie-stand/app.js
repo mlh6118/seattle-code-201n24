@@ -20,13 +20,17 @@ let hours = ['6 a.m.', '7 a.m.', '8 a.m.'];
   We have to add 1 to that difference to get the number 
     of possible options between our min and max. So we ...  
       9 + 1 = 10
+      Let's call 10 our range
 
-  math.random() will give us a number between 1 & 10
-    ex. a random number: 2
-    But 2 is not between our min and max values of 6 and 15
-    Add that random number (2) to our min value (6) to get a  
+  math.random() will give us a random decimal 
+    We need to multiply it by our range to get a number
+      that is in our range (between 1 & 10);
+        math.random() * 10 
+    ex. a random number: 2.34
+    But 2.34 is not between our min and max values of 6 and 15
+    Add that random number (2.34) to our min value (6) to get a  
       number in the range we are looking for:
-        2 + 6 = 8
+        2.34 + 6 = 8.34
 
   But math.random() will usually return values with decimals.       
   let's say we have a random number of 2.34
