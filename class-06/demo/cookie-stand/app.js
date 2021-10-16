@@ -71,3 +71,10 @@ let seattle = {
 }
 
 seattle.renderTheList();
+
+
+instructor.calcMultiplesOfFive = function() {
+  for (let i = 0; i < this.faveNumbers.length; i++) {
+    this.multiplesOfFive.push(this.faveNumbers[i] * 5);
+  }
+}
