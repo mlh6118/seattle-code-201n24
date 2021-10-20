@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.container div {
+  border: 1px solid gray;
+  width: min-content;
+  margin: 1rem;
+  padding: 1rem;
+  /* 
+    STRETCH GOAL
+      Flex-shrink
+      Flex-grow
+        try applying these properties to individual flex children to really see it in action (not all of them at the same time)
+   */
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+}

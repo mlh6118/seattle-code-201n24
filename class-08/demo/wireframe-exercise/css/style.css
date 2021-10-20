@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: linen;
+}
+
+header {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+header nav {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center; 
+}
+
+main,
+header nav {
+  margin: 0 auto;
+  width: 960px;
+  /* border: 5px solid magenta; */
+}
+
+header ul {
+  /* display: inline-block; */
+  margin-left: 1rem;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  padding: .5rem;
+}
+
+main article {
+  float: right;
+  width: 480px;
+  padding: 1rem 0 0 1rem;
+}
+
+main article section {
+  overflow: scroll;
+  height: 300px;
+}
