@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 252, 252);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: lightcyan;
+}
+
+main {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+}
+
+main > section {
+  flex-basis: 60%;
+}
+main > aside {
+  flex-basis: 36%;
+}
+
+article {
+  border: 1px solid rgb(112, 159, 165);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+article > img {
+  width: 275px;
+}
+
+footer {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  /*font-style: italic;*/
+  padding: 1rem;
+  color:  rgb(112, 159, 165);
+  border-bottom: 10px double rgb(112, 159, 165);
+  /* font-family: 'Special Elite', cursive; */
+  font-family: 'Antic Slab', serif;
+}
+
+h2 {
+  color: rgba(112, 159, 165);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: rgb(112, 159, 165);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* font-family: 'Special Elite', cursive; */
+  font-family: 'Antic Slab', serif;
+}
+
+ul {
+  margin-left: 1rem;
+  list-style: square;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: rgb(112, 159, 165);
+}
+
+/* -- Table styles -- */
+
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem;
+}
+
+table, td {
+  border: 1px solid rgb(112, 159, 165);
+}
+
+td {
+  padding: 1rem;
+}
+thead td {
+  font-weight: bold;
+}
+tfoot {
+  background-color: rgba(112, 159, 165, .1);
+}
+
+
+/* -- Form styles -- */
+form {
+  width: 100%;
+  margin-top: 2rem;
+}
+fieldset {
+  border: 1px solid rgb(112, 159, 165);
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+legend {
+  color: rgb(112, 159, 165);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+textarea,
+label,
+input {
+  display: block;
+}
+
+textarea,
+input {
+  margin-bottom: 1rem;
+}
