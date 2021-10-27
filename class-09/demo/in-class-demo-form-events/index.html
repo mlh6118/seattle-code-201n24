@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Events with forms</h1>
+  </header>
+  <main>
+    <form id="form">
+      <!-- One way to add a label-->
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="first name">
+
+      <!-- another way to add a label-->
+      <label>Last Name
+        <input type="text" name="lastname" placeholder="last name">
+      </label>
+
+      <fieldset>
+        <legend>Did you have a pet as a child</legend>
+        <label>Yes
+          <input type="radio" name="childhoodPet" value="Yes">
+        </label>
+        <label>No
+          <input type="radio" name="childhoodPet" value="No">
+        </label>
+      </fieldset>
+
+      <p>Which types of pets have you had if any?</p>
+      <label>Dog
+        <input type="checkbox" name="hadADog" value="dog">
+      </label>
+      <label>Cat
+        <input type="checkbox" name="hadACat" value="cat">
+      </label>
+      <label>Fish
+        <input type="checkbox" name="hadAFish" value="fish">
+      </label>
+      <label>Hamster
+        <input type="checkbox" name="hadAHamster" value="hamster">
+      </label>
+
+      <select name="pet">
+        <option value="" disabled selected>--Your favorite Pet type is--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="fish">Fish</option>
+        <option value="hamster">Hamster</option>
+        <option value="none">None</option>
+      </select>
+
+      <textarea></textarea>
+     
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

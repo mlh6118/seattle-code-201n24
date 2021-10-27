@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Adopt a Kitten</title>
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Adopt a Kitten</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Kittens Available for Adoption:</h2>
+      <div id="kittenProfiles">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Like 1</th>
+            <th>Like 2</th>
+            <th>Like 3</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </section>
+    <aside>
+      <form id="form">
+        <fieldset>
+          <legend>Add a Kitten</legend>
+          <!-- name, like, about, src -->
+          <label>Kitten's name:
+            <input type="text" name="kittenName" required>
+          </label>
+          <label>About the kitten:
+            <input type="text" name="about">
+          </label>
+          <label>Number of months old:
+            <input type="number" name="ageInMonths">
+          </label>
+          <label>Photo URL:
+            <input type="url" name="imageURL">
+          </label>
+          <label>Kitten's favorite thing:
+            <input type="text" name="fav1">
+          </label>
+          <label>Kitten's 2nd favorite thing:
+            <input type="text" name="fav2">
+          </label>
+          <label>Kitten's 3rd favorite thing:
+            <input type="text" name="fav3">
+          </label>
+        </fieldset>
+        <button type="submit">Add a kitten</button>
+      </form>
+    </aside>
+  </main>
+  <footer>
+  </footer>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
