@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr 40% 1fr;
+  grid-template-rows: 20rem 1fr 2fr 2fr 2fr;
+}
+.container div {
+  background-color: lightgray;
+  margin: .5rem;
+  border: 1px solid black;
+  flex: 1 1 20%;
+}
+
+/* div:nth-child(2),
+div:nth-child(6) {
+  background-color: lightgreen;
+}
+div:nth-child(4),
+div:nth-child(8) {
+  background-color:skyblue;
+} */
+div.wild {
+  background-color: blue;
+  grid-row: 2 / 5;
+  grid-column: 3 / 5;
+  order: 1;
+}
+
+
+/*
+
+—Jpeg/jpg and png — for photos
+—png — graphic (text or things need invisability)
+—gifs for short animations
+
+<audio> <video>
+*/

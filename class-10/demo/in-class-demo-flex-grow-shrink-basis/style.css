@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  justify-content: stretch;
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 2rem;
+  color: white;
+}
+
+section div {
+  padding: 1rem;
+}
+
+section div:first-of-type {
+  background-color: darkcyan;
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 2;
+  /* width: 30%; */
+}
+
+section div:nth-of-type(2) {
+  background-color: darkorchid;
+  flex-grow: 0;
+  flex-basis: 60%;
+  flex-shrink: 0;
+  /* width: 60% */
+}
+
+section div:nth-of-type(3) {
+  background-color: darksalmon;
+  flex-grow: 0;
+  flex-basis: 30%;
+  flex-shrink: 0;
+  /* width: 30% */
+}
